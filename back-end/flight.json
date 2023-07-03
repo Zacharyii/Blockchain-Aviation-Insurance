@@ -1,0 +1,409 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bytes",
+        "name": "addr",
+        "type": "bytes"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "flightNumber",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "customer",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint24",
+        "name": "seat",
+        "type": "uint24"
+      }
+    ],
+    "name": "TicketPurchased",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bytes",
+        "name": "addr",
+        "type": "bytes"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "flightNumber",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "customer",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint24",
+        "name": "seat",
+        "type": "uint24"
+      }
+    ],
+    "name": "TicketRefund",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_flightNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "_idCard",
+        "type": "string"
+      },
+      {
+        "internalType": "uint24",
+        "name": "_seat",
+        "type": "uint24"
+      }
+    ],
+    "name": "buyTicket",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint24",
+        "name": "_totalSeat",
+        "type": "uint24"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_departureTime",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_scheduledArrivalTime",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint128",
+        "name": "_ticketPrice",
+        "type": "uint128"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_airlineName",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_departurePoint",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "_destinationPoint",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_flightNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_airlineAddress",
+        "type": "address"
+      }
+    ],
+    "name": "createFlight",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_flightNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint24",
+        "name": "_seat",
+        "type": "uint24"
+      }
+    ],
+    "name": "refundTicket",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_airlineContract",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_insuranceContract",
+        "type": "address"
+      }
+    ],
+    "name": "setAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_flightNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_actualArrivalTime",
+        "type": "uint32"
+      }
+    ],
+    "name": "update",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_flightNumber",
+        "type": "uint256"
+      }
+    ],
+    "name": "getBalanceOf",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_flightNumber",
+        "type": "uint256"
+      }
+    ],
+    "name": "getEmptySeat",
+    "outputs": [
+      {
+        "internalType": "uint24[]",
+        "name": "",
+        "type": "uint24[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_flightNumber",
+        "type": "uint256"
+      }
+    ],
+    "name": "getFlightTime",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "takeOffTime",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "arriveTime",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_flightNumber",
+        "type": "uint256"
+      }
+    ],
+    "name": "getFlightToAirline",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_flightNumber",
+        "type": "uint256"
+      }
+    ],
+    "name": "getFlightTotalSeat",
+    "outputs": [
+      {
+        "internalType": "uint24",
+        "name": "",
+        "type": "uint24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_flightNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "_idCard",
+        "type": "string"
+      }
+    ],
+    "name": "getIdCardOwner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_flightNumber",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "_idCard",
+        "type": "string"
+      }
+    ],
+    "name": "getIdCardToSeat",
+    "outputs": [
+      {
+        "internalType": "uint24",
+        "name": "",
+        "type": "uint24"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_flightNumber",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPlanState",
+    "outputs": [
+      {
+        "internalType": "enum FlightInterface.PlanState",
+        "name": "",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_flightNumber",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPoint",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "from",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "to",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_flightNumber",
+        "type": "uint256"
+      }
+    ],
+    "name": "getTicketPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

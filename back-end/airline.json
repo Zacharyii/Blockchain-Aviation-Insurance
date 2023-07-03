@@ -1,0 +1,260 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bytes",
+        "name": "adr",
+        "type": "bytes"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "airlineName",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "flightNumber",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "from",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "to",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "departureTime",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint32",
+        "name": "scheduledArrivalTime",
+        "type": "uint32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "ticketPrice",
+        "type": "uint128"
+      }
+    ],
+    "name": "TicketIssued",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_airlineName",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "_airlineCompany",
+        "type": "address"
+      },
+      {
+        "internalType": "uint128",
+        "name": "_delayRate",
+        "type": "uint128"
+      },
+      {
+        "internalType": "uint128",
+        "name": "_cancelRate",
+        "type": "uint128"
+      }
+    ],
+    "name": "addAirlines",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      }
+    ],
+    "name": "getAirlineAuthority",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "getCancelRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_address",
+        "type": "address"
+      }
+    ],
+    "name": "getDelayRate",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint24",
+        "name": "_totalSeat",
+        "type": "uint24"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_departureTime",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_scheduledArrivalTime",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint128",
+        "name": "_ticketPrice",
+        "type": "uint128"
+      },
+      {
+        "internalType": "string",
+        "name": "_departurePoint",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_destinationPoint",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_flightNumber",
+        "type": "uint256"
+      }
+    ],
+    "name": "releaseFlight",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_airlineCompany",
+        "type": "address"
+      }
+    ],
+    "name": "removeAirlines",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_flightContract",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_insuranceContract",
+        "type": "address"
+      }
+    ],
+    "name": "setAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_name",
+        "type": "string"
+      }
+    ],
+    "name": "setAirlineName",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint128",
+        "name": "_cancelRate",
+        "type": "uint128"
+      }
+    ],
+    "name": "setCancelRate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint128",
+        "name": "_delayRate",
+        "type": "uint128"
+      }
+    ],
+    "name": "setDelayRate",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

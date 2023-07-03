@@ -1,0 +1,25 @@
+mysql :
+  host: 127.0.0.1
+  port: 3306
+  config: charset=utf8mb4&parseTime=True&loc=Local
+  db: flight_delay
+  user: root
+  password: "244605669a"
+  log_level: dev #//日志等级
+
+logger:
+  level: info
+  prefix: '[airline]'  #前缀
+  director: log
+  show_line: true   #是否显示行号
+  log_in_console: true #//是否显示文件路径
+
+encrypt :  #加密
+  md5 : "cuit"  #md5加密
+  xid : "CUIT"  #xid生成
+
+contract :
+  address1 : "0xA54A1E3Ab0E21Dd659537475DcA261ffe3FA0e7e"  #合约地址
+  address2 : "0x91d9137F81C1B04e9f5Fc2c77F5eA45E589C31dF"  #合约地址
+  address3 : "0x9BeF27A51039DDbc2EBbCB5F6d7FE1078035aE33"  #合约地址
+  netDial : "ws://127.0.0.1:7545"    #测试链RPC节点地址

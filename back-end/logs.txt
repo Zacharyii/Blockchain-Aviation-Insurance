@@ -1,0 +1,53 @@
+[[airline]] [2023-05-26 10:30:00] [36m[info][0m main.go:9 main.main 111
+[[airline]] [2023-05-26 10:30:40] [36m[info][0m main.go:9 main.main 111
+[[airline]] [2023-06-02 10:26:57] [31m[error][0m router_company.go:47 airline/router.NewCompany invalid character '-' in numeric literal
+[[airline]] [2023-06-02 10:28:02] [31m[error][0m router_company.go:47 airline/router.NewCompany invalid character '-' in numeric literal
+[[airline]] [2023-06-02 11:28:47] [31m[error][0m router_user.go:23 airline/router.RoutersUser.func1 invalid character '-' in numeric literal
+[[airline]] [2023-06-02 11:29:50] [31m[error][0m router_user.go:23 airline/router.RoutersUser.func1 invalid character '-' in numeric literal
+[[airline]] [2023-06-02 11:31:24] [31m[error][0m router_user.go:23 airline/router.RoutersUser.func1 invalid character '-' in numeric literal
+[[airline]] [2023-06-02 11:31:49] [31m[error][0m router_user.go:23 airline/router.RoutersUser.func1 invalid character '-' in numeric literal
+[[airline]] [2023-06-02 11:32:42] [31m[error][0m router_user.go:24 airline/router.RoutersUser.func1 invalid character '-' in numeric literal
+[[airline]] [2023-06-02 12:16:02] [31m[error][0m router_user.go:24 airline/router.RoutersUser.func1 invalid character '-' in numeric literal
+[[airline]] [2023-06-02 12:21:16] [31m[error][0m router_user.go:24 airline/router.RoutersUser.func1 invalid character '-' in numeric literal
+[[airline]] [2023-06-02 12:21:32] [31m[error][0m router_user.go:24 airline/router.RoutersUser.func1 invalid character '-' in numeric literal
+[[airline]] [2023-06-02 12:23:57] [31m[error][0m router_user.go:24 airline/router.RoutersUser.func1 invalid character '-' in numeric literal
+[[airline]] [2023-06-02 12:25:14] [31m[error][0m router_user.go:24 airline/router.RoutersUser.func1 invalid character '-' in numeric literal
+[[airline]] [2023-06-02 14:00:29] [31m[error][0m router_user.go:24 airline/router.RoutersUser.func1 EOF
+[[airline]] [2023-06-02 14:06:45] [31m[error][0m router_user.go:24 airline/router.RoutersUser.func1 EOF
+[[airline]] [2023-06-02 14:07:29] [31m[error][0m router_user.go:25 airline/router.RoutersUser.func1 EOF
+[[airline]] [2023-06-02 14:17:57] [31m[error][0m router_user.go:24 airline/router.RoutersUser.func1 invalid character '-' in numeric literal
+[[airline]] [2023-06-02 14:20:02] [31m[error][0m router_user.go:24 airline/router.RoutersUser.func1 invalid character '-' in numeric literal
+[[airline]] [2023-06-02 14:23:46] [31m[error][0m router_user.go:24 airline/router.RoutersUser.func1 invalid character '-' in numeric literal
+[[airline]] [2023-06-02 14:25:11] [31m[error][0m router_user.go:24 airline/router.RoutersUser.func1 invalid character '-' in numeric literal
+[[airline]] [2023-06-02 21:24:06] [31m[error][0m router_user.go:29 airline/router.RoutersUser.func1 Error 1054 (42S22): Unknown column 'id_card' in 'field list'
+[[airline]] [2023-06-05 23:36:35] [31m[error][0m router_user.go:36 airline/router.RoutersUser.func1 Error 1054 (42S22): Unknown column 'from_addr' in 'where clause'
+[[airline]] [2023-06-05 23:37:38] [31m[error][0m router_user.go:36 airline/router.RoutersUser.func1 Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from=? and to=? ) AND departure_time=?' at line 1
+[[airline]] [2023-06-05 23:39:57] [31m[error][0m router_user.go:36 airline/router.RoutersUser.func1 Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from=? and to=? ) AND departure_time=?' at line 1
+[[airline]] [2023-06-05 23:40:34] [31m[error][0m router_user.go:36 airline/router.RoutersUser.func1 Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from=? and to=? ) AND departure_time=?' at line 1
+[[airline]] [2023-06-05 23:43:11] [31m[error][0m router_user.go:39 airline/router.RoutersUser.func1 Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from=? and to=? ) AND departure_time=?' at line 1
+[[airline]] [2023-06-05 23:46:21] [31m[error][0m router_user.go:26 airline/router.RoutersUser.func1 json: cannot unmarshal number 1686009600000 into Go struct field FlightModel.departTime of type uint32
+[[airline]] [2023-06-05 23:48:30] [31m[error][0m router_user.go:26 airline/router.RoutersUser.func1 json: cannot unmarshal string into Go struct field FlightModel.departTime of type uint32
+[[airline]] [2023-06-05 23:53:06] [31m[error][0m router_user.go:26 airline/router.RoutersUser.func1 json: cannot unmarshal string into Go struct field FlightModel.departPlace of type int64
+[[airline]] [2023-06-05 23:56:37] [31m[error][0m router_user.go:40 airline/router.RoutersUser.func1 Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from=? and to=? ) AND departure_time=?' at line 1
+[[airline]] [2023-06-05 23:58:54] [31m[error][0m router_user.go:40 airline/router.RoutersUser.func1 Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from=? and to=? and departure_time=?' at line 1
+[[airline]] [2023-06-05 23:59:37] [31m[error][0m router_user.go:40 airline/router.RoutersUser.func1 Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from= ? and to= ? and departure_time= ?' at line 1
+[[airline]] [2023-06-06 00:00:56] [31m[error][0m router_user.go:40 airline/router.RoutersUser.func1 Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'to= ? and departure_time= ?' at line 1
+[[airline]] [2023-06-06 00:14:59] [31m[error][0m router_user.go:40 airline/router.RoutersUser.func1 Error 1146 (42S02): Table 'flight_delay.flight' doesn't exist
+[[airline]] [2023-06-06 00:16:17] [31m[error][0m router_user.go:40 airline/router.RoutersUser.func1 Error 1054 (42S22): Unknown column '成都' in 'where clause'
+[[airline]] [2023-06-06 00:17:08] [31m[error][0m router_user.go:40 airline/router.RoutersUser.func1 Error 1146 (42S02): Table 'flight_delay.flight_models' doesn't exist
+[[airline]] [2023-06-06 17:34:17] [31m[error][0m ethUtils.go:18 airline/eth.RecoverString false
+[[airline]] [2023-06-06 17:34:17] [31m[error][0m ethUtils.go:28 airline/eth.RecoverInt64 false
+[[airline]] [2023-06-06 17:34:17] [31m[error][0m ethUtils.go:28 airline/eth.RecoverInt64 false
+[[airline]] [2023-06-06 17:34:17] [31m[error][0m ethUtils.go:18 airline/eth.RecoverString false
+[[airline]] [2023-06-06 17:43:43] [31m[error][0m ethUtils.go:47 airline/eth.ErrHandle 数据库操作失败！Error 1366 (HY000): Incorrect integer value: '' for column 'seat' at row 1
+
+[[airline]] [2023-06-06 17:43:43] [31m[error][0m ethUtils.go:47 airline/eth.ErrHandle 数据库操作失败！Error 1366 (HY000): Incorrect integer value: '' for column 'seat' at row 1
+
+[[airline]] [2023-06-06 17:46:13] [31m[error][0m ethUtils.go:47 airline/eth.ErrHandle 数据库操作失败！Error 1366 (HY000): Incorrect integer value: '' for column 'seat' at row 1
+
+[[airline]] [2023-06-06 17:46:13] [31m[error][0m ethUtils.go:47 airline/eth.ErrHandle 数据库操作失败！Error 1366 (HY000): Incorrect integer value: '' for column 'seat' at row 1
+
+[[airline]] [2023-06-06 17:49:02] [31m[error][0m ethUtils.go:47 airline/eth.ErrHandle 数据库操作失败！Error 1366 (HY000): Incorrect integer value: '' for column 'seat' at row 1
+
+[[airline]] [2023-06-06 17:49:02] [31m[error][0m ethUtils.go:47 airline/eth.ErrHandle 数据库操作失败！Error 1366 (HY000): Incorrect integer value: '' for column 'seat' at row 1
+
